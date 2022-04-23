@@ -202,7 +202,7 @@ function bikinMotor(){
 	let jeniMotor = range(1, 3);
 	let pilihMotor = 'motor' + jeniMotor;
 	motor.first().addClass(pilihMotor + ' tantangan belumLewat');
-	motor.first().css({'animation' : 'maju 18s forwards,  '+ pilihMotor +' .3s steps(3) infinite'});
+	motor.first().css({'animation' : 'maju 10s forwards,  '+ pilihMotor +' .3s steps(3) infinite'});
 }
 
 function intervalMotor(){
@@ -214,7 +214,7 @@ function intervalMotor(){
 				  	window.clearTimeout(timerBikinMotor);
 				 	
 				 	//atur durasi keluar motor antara 3 detik sampai 6 detk
-				 	durasi = range(3000, 5000);
+				 	durasi = range(2000, 4000);
 
 				  	intervalMotor();
 			 }, durasi);
